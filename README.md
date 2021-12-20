@@ -1,4 +1,4 @@
-# Personality_Test_Software-
+# Personality_Test_Software
 
 ## Describtion: 
 Scoring users’ responses to the classic Myers–Briggs personality test. Assume that the test has 70 questions that determine a person’s personality in four dimensions. Each question has two answer choices that we’ll call the “A” and “B” answers. Questions are organized into 10 groups of seven questions, with the following repeating pattern in each group:
@@ -13,8 +13,25 @@ Scoring users’ responses to the classic Myers–Briggs personality test. Assum
 
 
 In other words, if we consider introversion/extraversion (I/E) to be dimension 1, sensing/intuition (S/N) to be dimension 2, thinking/feeling (T/F) to be dimension 3, and judging/perception (J/P) to be dimension 4, the map of questions to their respective dimensions would look like this:
-
-<a href=”https://www.linkedin.com/in/yushi95/"><img align=”left” src=”https://raw.githubusercontent.com/username/reponame/branch/foldername/icon.svg" alt=”icon | LinkedIn” width=”21px”/></a>
-
+````
 1223344122334412233441223344122334412233441223344122334412233441223344
 BABAAAABAAAAAAABAAAABBAAAAAABAAAABABAABAAABABABAABAAAAAABAAAAAABAAAAAA
+````
+
+The following is a partial sample input file of names and responses:
+````
+Betty Boop
+BABAAAABAAAAAAABAAAABBAAAAAABAAAABABAABAAABABABAABAAAAAABAAAAAABAAAAAA
+Snoopy
+AABBAABBBBBABABAAAAABABBAABBAAAABBBAAABAABAABABAAAABAABBBBAAABBAABABBB
+````
+
+If less than 50% of a person’s responses are B for a given personality dimension, the person’s type for that dimension should be the first of its two choices. If the person has 50% or more B responses, the person’s type for that dimension is the second choice. Your program should output each person’s name, the number of A and B responses for each dimension, the percentage of Bs in each dimension, and the overall personality type. The following should be your program’s output for the preceding input data:
+````
+Betty Boop:
+1A–9B 17A–3B 18A–2B 18A–2B
+[90%, 15%, 10%, 10%] = ISTJ
+Snoopy:
+7A–3B 11A–9B 14A–6B 6A–14B
+[30%, 45%, 30%, 70%] = ESTP
+````
