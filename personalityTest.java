@@ -1,4 +1,3 @@
-/*Qiqi Hu, CS210, 11/17/2020, Coding assignment #7*/
 import java.util.*;
 import java.io.*;
 public class PersonalityTest{
